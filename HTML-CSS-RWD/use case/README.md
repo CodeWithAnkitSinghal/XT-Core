@@ -13,3 +13,13 @@ Create site called "Sapient Tours" by adding nav bars, image list, footers which
 
 4. UC4->Flex Calculator
 Create calculator using flexbox layout, which shows how to create complex layouts using flexbox properties.We have used Flex-wrap and other flex properties to achieve the same.
+
+Week2
+5. UC5-> Agoda-RWD
+Create Home page of Agodaas a Responsive web design. The content is Static.
+
+6. UC6-> RWD Tours Website
+Modify the Sapient Tours into a responsive web design.
+
+7. UC7-> Table Layout-Temperature records
+Use of table layout to create a temperature record.
