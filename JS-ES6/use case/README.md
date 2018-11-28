@@ -14,3 +14,6 @@ Quiz
 
 5. UC5->TODO App using Array
 Use the class structure to complete the TODO App
+
+6. UC6-> Closure- Value caching
+Is function is claled with same value again and again, the value must be returned from cache.
