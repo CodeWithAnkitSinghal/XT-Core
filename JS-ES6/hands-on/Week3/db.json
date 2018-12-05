@@ -1,0 +1,24 @@
+{
+  "profile": [
+    {
+      "id": 1,
+      "name": "Ankit",
+      "city": "Bharatpur"
+    },
+    {
+      "id": 2,
+      "name": "Goldy",
+      "city": "Punjab"
+    },
+    {
+      "name": "Vinamra",
+      "city": "rajasthan",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "city": "Mahabharat",
+      "name": "Sanjay"
+    }
+  ]
+}
