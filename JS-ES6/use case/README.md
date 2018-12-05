@@ -17,3 +17,8 @@ Use the class structure to complete the TODO App
 
 6. UC6-> Closure- Value caching
 Is function is claled with same value again and again, the value must be returned from cache.
+
+7. UC7-> Promise all using map api
+for the provided URLs, collect user informations in one call.
+
+8. UC8-> using fetch async and await create a server api to perform crud opertaion on profile data.
