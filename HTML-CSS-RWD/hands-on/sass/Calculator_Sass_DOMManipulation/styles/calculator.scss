@@ -1,0 +1,60 @@
+$text-align: center;
+$body-background: #eaeaea;
+$zero-margin:0;
+$zero-padding:0;
+
+
+html, body{
+	margin: $zero-margin;
+	padding: $zero-padding;
+	border: 0;
+    font-size: 100%;
+    background-color: $body-background;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1{
+    margin: $zero-margin;
+    padding: $zero-padding;
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0.5%;
+}
+
+.container{
+    width: 60%;
+    margin: 5% auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#title{
+    text-align: $text-align;
+}
+
+#calcs-section{
+    margin: 1% 2%;
+    input{
+        width: 99%;
+        margin: 0 auto;
+        background-color: rgb(192, 190, 190);
+    }
+}
+
+#calc-buttons{
+    margin: 1% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+button{
+    width: 25%;
+    margin: 0.5%;
+}
