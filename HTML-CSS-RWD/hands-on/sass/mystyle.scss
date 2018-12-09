@@ -1,0 +1,42 @@
+$font-stack: Helvetica, sans-serif;
+$text-align:center;
+$primary-color: #333;
+$width: 5em + 1;
+$age:20;
+$name: foo;
+$attr: border;
+
+body{
+    font: 100% $font-stack;
+    color: $primary-color;
+    text-align: $text-align;
+}
+
+span{
+    content: 'hello' + 'Ankit';
+}
+
+.bool{
+    @if($age > 10 and $age < 25){
+        color: green;
+    }
+}
+
+#main{
+    width: $width;
+}
+
+#sidebar{
+    width: $width;
+}
+
+p.#{$name}{
+    #{$attr}-color:blue
+}
+
+$content: "first";
+$content: "second?" !default;
+
+#main{
+    content: $content;
+}

@@ -1,0 +1,37 @@
+body,
+html,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ccffff;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sec-grid {
+  display: flex;
+  padding: 10px;
+}
+.sec-grid .sec-grid__col3, .sec-grid .sec-grid__col2, .sec-grid .sec-grid__col1 {
+  padding: 10px;
+}
+.sec-grid__col1 {
+  flex: 1 1 33%;
+  border: 2px red solid;
+  background-color: red;
+}
+.sec-grid__col2 {
+  flex: 1 1 33%;
+  border: 2px red solid;
+  background-color: #1eff00;
+}
+.sec-grid__col3 {
+  flex: 1 1 33%;
+  border: 2px red solid;
+  background-color: #bb92e2;
+}
+
+/*# sourceMappingURL=index.css.map */

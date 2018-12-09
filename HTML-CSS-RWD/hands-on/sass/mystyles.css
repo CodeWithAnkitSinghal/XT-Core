@@ -1,0 +1,31 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+span {
+  content: "helloAnkit";
+}
+
+.bool {
+  color: green;
+}
+
+#main {
+  width: 6em;
+}
+
+#sidebar {
+  width: 6em;
+}
+
+p.foo {
+  border-color: blue;
+}
+
+#main {
+  content: "first";
+}
+
+/*# sourceMappingURL=mystyles.css.map */
