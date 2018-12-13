@@ -1,0 +1,202 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+h1{
+  text-align: center;
+}
+
+h3{
+  padding: 2% 2%;
+  margin: 0;
+  font-size: 16px;
+}
+
+form {
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  table{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0% 2% 2% 2%;
+  }
+
+
+  td{
+    padding: 5px 2%;
+    border-bottom: 1px solid rgb(167, 164, 164);
+  }
+
+  #c1, #c2{
+    border-top: 1px solid rgb(167, 164, 164);
+  }
+
+  #total{
+    border-bottom: 2px solid rgb(167, 164, 164);
+    font-weight: bold;
+  }
+
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0.5em;
+    color: rgb(167, 164, 164);
+  }
+  
+  input {
+    font: 1em sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(167, 164, 164);
+    border-radius: 5px;
+    color: rgb(167, 164, 164);
+    padding: 1.5%;
+    text-align: right;
+  }
+  
+  input:focus{
+    /* To give a little highlight on active elements */
+    border-color: #000;
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    width: 100%;
+    padding: 1.5%;
+    margin: 0;
+    background: #2a2af9ad;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    border-width: 1px;
+  }
+
+  .column:first-child{
+    background: white;
+  }
+
+  .row:after{
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+  .column{
+    float: left;
+    background: #f3efef;
+  }
+
+  .column_outer{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 1%;
+    float: left;
+    width: 99%;
+    background: #f3efef;
+  }
+
+  input:hover{
+    -webkit-box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.75);
+  }
+
+  button:hover{
+    -webkit-box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.75);
+  }
+
+
+@media (max-width:479px)  { 
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+  .column{
+    width: 100%;
+  }
+  h1{
+    font-size: 16px;
+  }
+
+  h3{
+    font-size: 12px;
+  }
+
+  label{
+    font-size: 12px;
+  }
+
+  button{
+    font-size: 16px;
+  }
+
+  table{
+    font-size: 12px;
+  }
+
+}
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+  .column{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 16px;
+  }
+
+  button{
+    font-size: 16px;
+  }
+
+  table{
+    font-size: 14px;
+  }
+}
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+  h1{
+    font-size: 24px;
+  }
+  button{
+    font-size: 24px;
+  }
+
+  table{
+    font-size: 16px;
+  }
+
+}
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  .column{
+    width: 49%;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+  button{
+    font-size: 2em;
+  }
+
+  table{
+    font-size: 18px;
+  }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
