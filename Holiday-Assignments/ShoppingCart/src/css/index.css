@@ -20,6 +20,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  border-radius: 5px;
+}
+
 .cf:before, .cf:after {
   content: " ";
   display: table;
@@ -59,8 +63,12 @@ img {
 
 .table-cell {
   display: table-cell;
-  width: 28%;
+  width: 70%;
   padding: 1%;
+}
+
+.right-side {
+  width: 30%;
 }
 
 .heading {
@@ -71,41 +79,6 @@ img {
   font-family: "Droid Serif", serif;
   font-size: 2em;
   float: left;
-}
-.heading a.continue:link, .heading a.continue:visited {
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: -0.015em;
-  font-size: 1em;
-  padding: 1em;
-  color: #fff;
-  background: #82ca9c;
-  font-weight: bold;
-  border-radius: 50px;
-  float: right;
-  text-align: right;
-  -webkit-transition: all 0.25s linear;
-  -moz-transition: all 0.25s linear;
-  -ms-transition: all 0.25s linear;
-  -o-transition: all 0.25s linear;
-  transition: all 0.25s linear;
-}
-.heading a.continue:after {
-  content: "❯";
-  padding: 0.5em;
-  position: relative;
-  right: 0;
-  -webkit-transition: all 0.15s linear;
-  -moz-transition: all 0.15s linear;
-  -ms-transition: all 0.15s linear;
-  -o-transition: all 0.15s linear;
-  transition: all 0.15s linear;
-}
-.heading a.continue:hover, .heading a.continue:focus, .heading a.continue:active {
-  background: #f69679;
-}
-.heading a.continue:hover:after, .heading a.continue:focus:after, .heading a.continue:active:after {
-  right: -10px;
 }
 
 .tableHead {
@@ -176,12 +149,12 @@ img {
   vertical-align: middle;
 }
 .cart .items .cartSection .itemNumber {
-  font-size: 0.8em;
+  font-size: 60%;
   color: #dadada;
   margin-bottom: 0.5em;
 }
 .cart .items .cartSection .itemColor {
-  font-size: 0.8em;
+  font-size: 60%;
   color: #dadada;
   margin-bottom: 5.5em;
 }
@@ -194,10 +167,10 @@ img {
 }
 .cart .items .cartSection p {
   display: inline-block;
-  font-size: 0.85em;
+  font-size: 60%;
   color: #9a9a9a;
   font-family: "Montserrat", sans-serif;
-  padding: 0 1em;
+  padding: 0 1%;
 }
 .cart .items .cartSection p a {
   text-decoration: none;
@@ -221,7 +194,7 @@ img {
   margin: 1em 0.5em 0 0;
 }
 .cart .items .cartSection .itemImg {
-  width: 15em;
+  width: 30%;
   display: inline;
   padding-right: 1em;
 }
@@ -270,7 +243,6 @@ a.remove:hover {
 }
 
 .help {
-  border: 2px solid #efefef;
   float: left;
   width: 20%;
   padding: 2%;
@@ -287,6 +259,20 @@ a.remove:hover {
 }
 .help div a {
   color: #dbdbdb;
+}
+
+#promotion {
+  display: flex;
+  flex-direction: row;
+}
+#promotion input {
+  margin-left: auto;
+  margin-right: 1%;
+}
+#promotion button {
+  background: transparent;
+  border-radius: 0px;
+  padding: 1% 4%;
 }
 
 .btn:link, .btn:visited {
@@ -438,7 +424,6 @@ a.remove:hover {
   /* Black w/ opacity */
 }
 
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -447,7 +432,6 @@ a.remove:hover {
   width: 80%;
 }
 
-/* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
@@ -461,5 +445,338 @@ a.remove:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  border: 1px solid #e4e2e2;
+  margin: 0 auto;
+}
+
+header.carouselHead {
+  text-align: center;
+  font-size: 16px;
+  padding-left: 21%;
+  padding-right: 20%;
+  line-height: 1.5em;
+  margin-top: 3%;
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 6px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 10px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 6px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 10px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(58, 57, 57, 0.8);
+  color: white;
+}
+
+.viewDetailContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewDetails {
+  background: none;
+  border: 1px solid lightgrey;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  background-color: white;
+  color: gray;
+  width: 60%;
+  box-sizing: content-box;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.imageDiv {
+  margin: 5% 10%;
+}
+
+.carouselPrice {
+  text-align: center;
+  font-size: 16px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.7s;
+  animation-name: mymove;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*
+subtotal section
+*/
+.pricebox {
+  border-top: 5px #ccc solid;
+  border-bottom: 5px #ccc solid;
+  padding: 2% 0;
+  margin: 2% 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.pricebox .insidePrice {
+  margin: 3% 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.insidePrice .leftCol {
+  width: 60%;
+}
+.insidePrice .rightCol {
+  width: 38%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.leftCol .ship-text {
+  color: #ccc;
+  width: 70%;
+  line-height: 20px;
+  padding-top: 1%;
+}
+
+.footerButtons .btnwrap {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  margin-bottom: 2%;
+}
+.footerButtons a.checkout {
+  background: #2764a2;
+  color: white;
+  padding: 2% 6%;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+}
+.footerButtons a.checkout:hover {
+  background: #f69679;
+}
+.footerButtons .Shipping {
+  color: #666;
+  margin: 2%;
+  text-align: center;
+}
+.footerButtons p {
+  padding-left: 25px;
+  height: 35px;
+  padding-top: 10px;
+  text-align: right;
+}
+
+/*
+overlay section
+*/
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+  flex: 100%;
+  text-align: right;
+  margin-right: 2%;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: block;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+}
+
+.overlay-content {
+  display: flex;
+  background: white;
+  flex-direction: column;
+  margin: 2% auto;
+  width: 75%;
+}
+
+.overlaySections {
+  display: flex;
+  flex-direction: row;
+}
+
+.overlayLeft {
+  flex: 50%;
+}
+
+.overlayLeftContent {
+  margin: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  border-top: 0.5em solid #e7e1e1;
+}
+.overlayLeftContent div {
+  margin: 0 auto;
+}
+
+.overlayTitle {
+  font-size: 1.5em;
+  color: #aaa;
+}
+
+.overlayPrice {
+  font-size: 3em;
+  line-height: 2em;
+}
+.overlayPrice div {
+  display: inline-block;
+  font-size: 0.5em;
+}
+
+.sizeandqty {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  padding-top: 20%;
+}
+
+.overlaySize, .overlayQty {
+  padding: 1em;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: black;
+  border: 1px solid #aaa;
+  margin: 1% !important;
+  flex: 50%;
+}
+
+.overlaySize select, .overlayQty select {
+  border: none;
+  width: 100%;
+}
+
+.overlayOperationButton {
+  padding-top: 5%;
+  width: 65%;
+}
+
+.overlayButton {
+  border: 0px;
+  text-align: center;
+  background-color: #3076CE;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: content-box;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.overlayAnchor {
+  text-decoration-line: underline;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 2em;
+}
+
+.overlayRight {
+  flex: 50%;
+}
+
+.overlayImage {
+  width: 75%;
+  margin: 10%;
+}
+.overlayImage img {
+  width: 100%;
+}
+
+.borderB1 {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.borderB5 {
+  border-bottom: 5px solid #d0d0d0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .right-side {
+    display: none;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=index.css.map */

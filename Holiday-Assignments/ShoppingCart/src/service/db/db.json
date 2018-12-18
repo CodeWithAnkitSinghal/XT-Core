@@ -1,0 +1,66 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "BASIC DENIM JACKET",
+      "style": "BLACK - 4454/322",
+      "color": "BLACK",
+      "size": "L",
+      "quantity": "1",
+      "price": "40",
+      "imgUrl": "src/images/tshirt1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "FAUX LEATHER BIKER JACKET",
+      "style": "BLACK - 1966/300",
+      "color": "BLACK",
+      "size": "Medium",
+      "quantity": "1",
+      "price": "100",
+      "imgUrl": "src/images/tshirt2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "PUFFER PARKA",
+      "style": "KHAKI - 8281/361",
+      "color": "KHAKI",
+      "size": "L",
+      "quantity": "1",
+      "price": "120",
+      "imgUrl": "src/images/tshirt3.jpg"
+    }
+  ],
+  "Carousel": [
+    {
+      "id": "item1",
+      "title": "Nike",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "color": "Blue",
+      "imgUrl": "src/images/suggestion1.jpg",
+      "price": "250",
+      "quantity": "2",
+      "size": "Medium"
+    },
+    {
+      "id": "item2",
+      "imgUrl": "src/images/suggestion2.jpg",
+      "price": "300",
+      "title": "Nike",
+      "color": "Black",
+      "quantity": "2",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "size": "Large"
+    },
+    {
+      "id": "item3",
+      "imgUrl": "src/images/suggestion3.jpg",
+      "price": "350",
+      "title": "Nike",
+      "color": "Black",
+      "quantity": "2",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "size": "Large"
+    }
+  ]
+}
