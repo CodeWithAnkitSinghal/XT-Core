@@ -24,3 +24,11 @@ Modify the Sapient Tours into a responsive web design.
 
 7. UC7-> Table Layout-Temperature records
 Use of table layout to create a temperature record.
+
+8.UC->8 Agoda Website 
+Tansformed using bootstrap
+
+
+
+9.UC9 -> Sapient Tours 
+Transform sapient tours using bootstrap 

@@ -1,0 +1,41 @@
+{
+  "name": "nodejs-todoapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha --timeout 3000 server/**/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "engines": {
+    "node": "10.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeWithAnkitSinghal/NodeJS-TodoApi.git"
+  },
+  "author": "Ankit Singhal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeWithAnkitSinghal/NodeJS-TodoApi/issues"
+  },
+  "homepage": "https://github.com/CodeWithAnkitSinghal/NodeJS-TodoApi#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.1.7",
+    "mongoose": "^5.3.2",
+    "validator": "^10.8.0"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "supertest": "^3.3.0"
+  }
+}
