@@ -1,0 +1,19 @@
+{
+  "name": "code-exercise",
+  "version": "1.0.0",
+  "description": "This is a shopping cart coding exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "canned -p 5800 ./server",
+    "buildJS": "webpack",
+    "buildStyle": "sass --watch ./static/styles/index.scss ./static/styles/index.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canned": "^0.3.12",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
+  }
+}

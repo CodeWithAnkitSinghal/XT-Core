@@ -1,0 +1,136 @@
+@import 'reset';
+
+$themeColor: #da2444;
+$cartSectionColor: #ece6e6;
+$shadowBoxBorderColor:  rgba(112,102,112,1);
+$inputLabelColor: #777777;
+$onfocusInputColor: rgb(161, 161, 252);
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logoContainer{
+    width: 20%;
+    padding: 1%;
+    margin-left: 11%;
+}
+
+.logoimage{
+    max-width:74%;
+    max-height:100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-shadow: 0px 7px 14px -8px $shadowBoxBorderColor;
+    -moz-box-shadow: 0px 7px 14px -8px $shadowBoxBorderColor;
+    box-shadow: 0px 7px 14px -8px $shadowBoxBorderColor;
+    nav{
+        width: 78%;
+        display: flex;
+        flex-direction: row;
+        margin-right: 11%;
+        section{
+            width: 50%;
+            margin-top: 7%;
+            padding-left: 10%;
+            ul{
+                display: flex;
+                flex-direction: row;
+                li{
+                    margin: 1% 4%;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.cartSection{
+    margin-top: 1%;
+    ul:nth-child(1){
+        margin-left: 58%;
+    }
+    ul:nth-child(2){
+        margin-left: 50%;
+        margin-top: 3%;
+        background: $cartSectionColor;
+        width: 38%;
+        padding: 6%;
+    }
+}
+
+.cart{
+    margin-left: 16%;
+    margin-top: 3%;
+}
+
+.signup{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    padding: 1%;
+}
+
+.signuptext{
+    width: 30%;
+    margin: 1%;
+    padding: 1%;
+    margin-left: 8%;
+    h2{
+        font-size: 24px;
+        font-weight: 600;
+        margin: 10% 0;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.signupForm{
+    width:30%;
+    margin: 1%;
+    padding: 1%;
+    label{
+        color: $inputLabelColor;
+    }
+    input{
+        border: 0px;
+        border-bottom: 1px solid $cartSectionColor;
+        margin: 4% 0;
+        width: 100%;
+        font-size: 20px;
+        &:focus {
+            outline: 0;
+            border-bottom: 2px solid $onfocusInputColor;
+            -webkit-box-shadow: 0px 7px 14px -8px $shadowBoxBorderColor;
+            -moz-box-shadow: 0px 7px 14px -8px $shadowBoxBorderColor;
+            box-shadow: 0px 7px 14px -8px $shadowBoxBorderColor;
+          }
+    }
+    button{
+        margin-top: 4%;
+        width: 100%;
+        background: $themeColor;
+        color: white;
+        border: 0px;
+        padding: 4% 0%;
+    }
+}
+
+footer{
+    background: $cartSectionColor;
+    .footer{
+        margin-left: 10%;
+        padding: 2% 0%;
+        font-size: 16px;
+    }
+}
+
