@@ -19,14 +19,14 @@
             <nav>
                 <section>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./product.html">Products</a></li>
                     </ul>
                 </section>
                 <section class="cartSection">
                     <ul>
-                        <li><a href="#">SignIn</a></li>
-                        <li><a href="#">Register</a></li>
+                        <li><a href="./login.html">SignIn</a></li>
+                        <li><a href="./register.html">Register</a></li>
                     </ul>
                     <ul>
                         <li class="cart"><a href="#"><i class="fa fa-shopping-cart" style="font-size:24px; color: #da2444">
@@ -37,8 +37,40 @@
         </header>
         <main class="home">
             <section class="carouselcontainer">
-                aaaa
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="./static/images/offers/offer1.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./static/images/offers/offer2.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./static/images/offers/offer3.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./static/images/offers/offer4.jpg">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">Prev</a>
+                    <a class="next" onclick="plusSlides(1)">Next</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
             </section>
+
             <section class="category">
                 <ul>
                     <li class="categorycontainer odd">
@@ -98,7 +130,7 @@
             </section>
         </footer>
     </div>
-    <script src="./dist/bundle.js"></script>
+    <script src="./static/js/carousel.js"></script>
 </body>
 
 </html>
