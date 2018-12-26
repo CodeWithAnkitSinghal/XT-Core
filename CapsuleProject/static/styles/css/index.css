@@ -131,7 +131,7 @@ header nav section ul li {
 }
 
 .signuptext {
-  width: 30%;
+  width: 32%;
   margin: 1%;
   padding: 1%;
   margin-left: 8%;
@@ -171,7 +171,7 @@ header nav section ul li {
 .signupForm button {
   margin-top: 4%;
   width: 100%;
-  background: #da2444;
+  background: #c44b62;
   color: white;
   border: 0px;
   padding: 4% 0%;
@@ -184,6 +184,88 @@ footer .footer {
   margin-left: 10%;
   padding: 2% 0%;
   font-size: 16px;
+}
+
+/* Home*/
+.home {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1%;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  margin-bottom: 0;
+}
+.category ul {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  padding: 1%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.category ul :last-child {
+  -webkit-box-shadow: 0px 7px 7px -8px #706670;
+  -moz-box-shadow: 0px 7px 7px -8px #706670;
+  box-shadow: 0px 0px 0px 0px #706670;
+}
+.category ul li {
+  padding: 2%;
+  -webkit-box-shadow: 0px 7px 7px -8px #706670;
+  -moz-box-shadow: 0px 7px 7px -8px #706670;
+  box-shadow: 0px 7px 7px -8px #706670;
+}
+.category ul li img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.categorycontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.categoryimagecontainer {
+  width: 33%;
+}
+
+.categorydescription {
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+.categorydescription h2 {
+  padding: 2%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+.categorydescription p {
+  padding: 2%;
+  text-align: center;
+  font-size: 12px;
+}
+.categorydescription button {
+  background: #c44b62;
+  color: white;
+  width: 30%;
+  margin: 2% auto;
+  border: 0;
+  padding: 2%;
+}
+
+.odd {
+  flex-direction: row;
+}
+
+.even {
+  flex-direction: row-reverse;
 }
 
 /*# sourceMappingURL=index.css.map */
