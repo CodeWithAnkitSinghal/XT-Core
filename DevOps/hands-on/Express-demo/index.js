@@ -8,8 +8,8 @@ app.use('/',middleware);
 
 
 
-app.listen(4001, () => {
-  console.log("server started at port 4001");
+app.listen(3000, () => {
+  console.log("server started at port 3000");
 });
 
 
