@@ -28,7 +28,7 @@
                         <li><a href="./login.html">SignIn</a></li>
                         <li><a href="./register.html">Register</a></li>
                     </ul>
-                    <ul>
+                    <ul id="myCart">
                         <li class="cart"><a href="#"><i class="fa fa-shopping-cart" style="font-size:24px; color: #da2444">
                                 </i> 0 Items</a></li>
                     </ul>
@@ -212,12 +212,154 @@
 
             </section>
         </main>
+
+        <!--My Cart modal-->
+        <div id="myCartModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <section class="modalheader">My Cart
+                    <div> (<span class="itemCount">0</span> item)</div>
+                    <span class="close">&times;</span>
+                </section>
+                <section class="modalbody">
+                    <div class="cartitem">
+                        <section class="cartitemImage">
+                            <img src="./static/images/products/fruit-n-veg/apple.jpg">
+                        </section>
+                        <section class="cartitemcalculation">
+                            <p>Apple - Washington, Regular, 4 pcs</p>
+                            <div class="product-items">
+                                <div class="incdecitem">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+                                <div>X</div>
+                                <div>Rs.187</div>
+                                <div>Rs.187</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="cartitem">
+                        <section class="cartitemImage">
+                            <img src="./static/images/products/fruit-n-veg/apple.jpg">
+                        </section>
+                        <section class="cartitemcalculation">
+                            <p>Apple - Washington, Regular, 4 pcs</p>
+                            <div class="product-items">
+                                <div class="incdecitem">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+                                <div>X</div>
+                                <div>Rs.187</div>
+                                <div>Rs.187</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="cartitem">
+                        <section class="cartitemImage">
+                            <img src="./static/images/products/fruit-n-veg/apple.jpg">
+                        </section>
+                        <section class="cartitemcalculation">
+                            <p>Apple - Washington, Regular, 4 pcs</p>
+                            <div class="product-items">
+                                <div class="incdecitem">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+                                <div>X</div>
+                                <div>Rs.187</div>
+                                <div>Rs.187</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="cartitem">
+                        <section class="cartitemImage">
+                            <img src="./static/images/products/fruit-n-veg/apple.jpg">
+                        </section>
+                        <section class="cartitemcalculation">
+                            <p>Apple - Washington, Regular, 4 pcs</p>
+                            <div class="product-items">
+                                <div class="incdecitem">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+                                <div>X</div>
+                                <div>Rs.187</div>
+                                <div>Rs.187</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="cartitem">
+                        <section class="cartitemImage">
+                            <img src="./static/images/products/fruit-n-veg/apple.jpg">
+                        </section>
+                        <section class="cartitemcalculation">
+                            <p>Apple - Washington, Regular, 4 pcs</p>
+                            <div class="product-items">
+                                <div class="incdecitem">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+                                <div>X</div>
+                                <div>Rs.187</div>
+                                <div>Rs.187</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="cartitem">
+                        <section class="cartitemImage">
+                            <img src="./static/images/products/fruit-n-veg/apple.jpg">
+                        </section>
+                        <section class="cartitemcalculation">
+                            <p>Apple - Washington, Regular, 4 pcs</p>
+                            <div class="product-items">
+                                <div class="incdecitem">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+                                <div>X</div>
+                                <div>Rs.187</div>
+                                <div>Rs.187</div>
+                            </div>
+                        </section>
+                    </div>
+
+                </section>
+                <section class="modalfooter">
+                    <div>
+                        <p>Promo code can be applied on payment page</p>
+                        <div class="checkoutbtn">
+                            <a href="#">
+                                <div>Proceed to Checkout</div>
+                                <div class="cartgrandTotal">Rs.187 &nbsp; &nbsp; &gt;</div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <!--My Cart modal ends-->
         <footer>
             <section class="footer">Copyright &copy; 2011-2018 Sabka Bazaar Grocery Supplies Pvt. Ltd
             </section>
         </footer>
     </div>
     <script src="./dist/bundle.js"></script>
+    <script src="./static/js/mycart.js"></script>
 </body>
 
 </html>
