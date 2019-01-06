@@ -1,0 +1,152 @@
+$desktop:990px;
+
+@mixin desktop {
+    @media(min-width: #{$desktop}){
+        @content;
+    }
+}
+
+
+*{
+    font-family: Dosis;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+	font-size: 14px;
+    margin: 0 7px;
+}
+
+.header-class{
+	width:100%;
+	padding-left: 1%;
+	padding-right: 1%;
+	display: flex;
+	flex-direction: row;
+	 
+	@include desktop(){
+		width: 100%;
+		padding-left:10%;
+		padding-right: 10%;
+	}
+	.header-logo-section{
+		flex: 70%;
+		a{
+			width: 100%;
+
+			img{
+				width:35%;
+			}
+		}
+		@include desktop(){
+			flex: 10%;
+			a{
+				width: 100%;
+				img{
+					width:100%;
+				}
+			}
+		}
+	}
+	.header-right-section{
+		flex: 20%;
+		@include desktop(){
+			flex:80%;
+		}
+		
+
+		.header-right-top-section{
+			display :none;
+
+			@include desktop(){
+				display:flex;
+				justify-content: flex-end;
+				margin: 1%;
+			}
+		}
+		.header-right-bottom-section{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			height: 100%;
+			@include desktop(){
+				align-items: end;
+				height: 54%;
+			}
+			.header-nav-section{
+				display: none;
+
+				@include desktop(){
+					display: flex;
+					margin-left: 5%;
+					flex: 89%;				
+					a{
+						margin-left: 5%;
+					}
+				}
+				
+			}
+			.header-cart-section{
+				display: flex;
+				background: lightgray;
+				flex-direction: row;
+				flex:auto;
+				height: inherit;
+				a{
+					align-items: center;
+					display: flex;
+					justify-content: center;
+					img{
+						width:35%;
+					}
+				}
+
+				@include desktop(){
+					flex: 15%;
+					align-items: center;
+					height: 100%;
+					a{
+						height: inherit;
+						width:100%;
+						img{
+							height: 70%;
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+.content{
+	width: 100%;
+	margin-left: 1%;
+	margin-right: 1%;
+	@include desktop(){
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 1%;
+	}
+}
+
+.footer
+{
+	background-color: #cccccc;
+    font-size: small;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: center;
+	@include desktop(){
+		text-align: left;
+		padding-left: 10%;
+	}
+    
+}
+
+.header-box-shadow{
+	box-shadow: 2px 13px 12px -6px #ccc;
+}

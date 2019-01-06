@@ -1,19 +1,25 @@
 {
   "name": "code-exercise",
   "version": "1.0.0",
-  "description": "This is a shopping cart coding exercise",
-  "main": "index.js",
+  "description": "Sabka Bazaar",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "canned -p 5800 ./server",
-    "buildJS": "webpack",
-    "buildStyle": "sass --watch ./static/styles/index.scss ./static/styles/index.css"
+    "build": "webpack --watch",
+    "watch-css": "sass --watch ./src/style/scss:./src/style/css",
+    "dev": "start npm run start && start npm run build && start npm run watch-css && start lite-server"
   },
-  "author": "",
+  "author": "Ankit Singhal",
   "license": "ISC",
   "dependencies": {
     "canned": "^0.3.12",
-    "webpack": "^4.28.2",
-    "webpack-cli": "^3.1.2"
+    "css-loader": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "npm": "^6.5.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
   }
 }
